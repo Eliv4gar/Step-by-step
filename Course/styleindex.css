@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.container{
+    margin: 30px auto 30px auto; 
+    background: linear-gradient(to bottom right, rgb(214, 174, 174), rgb(252, 246, 119));
+    max-width: 800px;
+}
+
+img{
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px black;
+}
+
+.me{
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    background-color:blanchedalmond;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.info p{
+    color: gray;
+    max-width: 400px;
+}
+
+.links a{
+    text-decoration: none;
+    color: gray;
+}
+
+.hobby {
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0 20px 0;
+}
+
+.hobby h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hobby ol{
+    list-style: none; ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.linkme{
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.linkme h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.formgroup label {
+    display: block;
+    font-size: 16px;
+    color: rgb(94, 84, 84);
+}
+
+.formgroup input,.formgroup textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    color: black;
+    outline: none;
+    padding: 5px 0px 5px 0px;
+}
+
+.btn{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+table{
+    margin: auto;
+}
+
+@media (max-width: 600px){
+    .me {
+        display: block;
+        text-align: center;
+    }
+
+    .info {
+        text-align: center;
+        margin: auto;
+    }
+
+    .info p {
+        margin: auto;
+    }
+
+    .me img{
+        margin-bottom: 15px;
+    }
+
+    .hobby ol {
+        display: block;
+        list-style: circle;
+        margin-left: 38%;
+    }
+}
