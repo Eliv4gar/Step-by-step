@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Cormorant+Garamond:ital@1&family=Montserrat&family=Prata&family=Tilt+Prism&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: linear-gradient(to bottom right, rgba(80, 192, 248, 0.701), rgb(17, 121, 8));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: 500ms ease-in-out;
+  text-align: center;
+}
+
+.slide h3 {
+  font-family: 'Cormorant Garamond';
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 2px;
+}
+
+.slide.active {
+  flex: 10 auto;
+}
+
+.slide.active h3{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
